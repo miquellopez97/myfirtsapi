@@ -15,6 +15,8 @@ const myFirtsController = require('./controllers/myFirtsController');
 
 app.get('/', myFirtsController.alumnos);
 
+app.use('/api/v1/films', require('./routes/filmRoutes'));
+
 app.use('/api/v1/user', require('./routes/userRoutes'));
 app.use('/api/v1/S04S05', require('./routes/S04S05'));
 app.use('/api/v1/S06', require('./routes/S06'));
