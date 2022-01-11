@@ -7,6 +7,7 @@ module.exports.selectById = async(data) => {
             status: true,
             result: doc,
         }
+        console.log('db', doc);
     } catch (err) {
         console.log('Error-userRepo-selectById', err);
     }

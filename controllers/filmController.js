@@ -18,7 +18,7 @@ module.exports = {
             const resFromService = await filmServices.selectById(filmId);
 
             if (resFromService.status) {
-                console.log(resFromService);
+                console.log('contr', resFromService);
                 if (resFromService.result) {
                     response.status = c.status.ok;
                     response.msg = "Film found"

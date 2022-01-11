@@ -16,7 +16,7 @@ module.exports.selectById = async(filmId) => {
             }
         };
         const resFromRepo = await repository.selectById(data);
-        console.log(resFromRepo);
+        console.log('service', resFromRepo);
         if (resFromRepo.status) {
             response.result = resFromRepo.result;
             response.status = true;
